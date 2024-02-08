@@ -20,7 +20,7 @@
 >
   <#assign cardHeader>
     <@logo.kw>
-      ${kcSanitize(msg("loginTitleHtml", (realm.displayNameHtml!"")))?no_esc}
+     <img src="${url.resourcesPath}/img/B2ALABS.png" style="width: 80%; height: 15%;" alt="My Image">
     </@logo.kw>
     <#if !(auth?has_content && auth.showUsername() && !auth.showResetCredentials())>
       <@heading.kw>
